@@ -1,0 +1,21 @@
+{
+  "name": "linuxtips-javascripts",
+  "version": "1.0.0",
+  "scripts": {
+    "test:create": "jest __tests__/createUser.test.js",
+    "test:createMissing": "jest __tests__/createUserMissingField.test.js",
+    "test:get": "jest __tests__/getUser.test.js",
+    "test:update": "jest __tests__/updateUser.test.js",
+    "test:delete": "jest __tests__/deleteUser.test.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

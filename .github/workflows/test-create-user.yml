@@ -1,0 +1,24 @@
+name: Test - Create User
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-create-user:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      - name: Instalar dependências
+        working-directory: javascript
+        run: npm install
+
+      - name: Executar teste de criação de usuário
+        working-directory: javascript
+        run: npm run test:create
