@@ -63,7 +63,7 @@ app.delete('/users/:id', (req, res) => {
     return res.status(404).json({ error: 'User not found' });
   }
   // Remove o usuário do array
-  users.splice(index, 1);
+ // users.splice(index, 1);
   return res.status(204).send(); // 204 No Content
 });
 
