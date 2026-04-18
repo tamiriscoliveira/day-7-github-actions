@@ -5,4 +5,3 @@ Repositório para aula do dia sete do curso de Github Actions
 https://docs.github.com/pt/actions/tutorials/build-and-test-code
 
 
-TESTE COM ERRO
